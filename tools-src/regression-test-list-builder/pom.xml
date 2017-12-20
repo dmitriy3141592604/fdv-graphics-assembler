@@ -1,0 +1,50 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>regression-test-list-builder</groupId>
+	<artifactId>regression-test-list-builder</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>Regression test lisb builder</name>
+	<description>Строит список регрессионных тестов</description>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<com.github.type-markup>0.0.2</com.github.type-markup>
+		<fdv.slf4j.logback>0.0.2</fdv.slf4j.logback>
+		<junit.junit.version>4.9</junit.junit.version>
+		<mockito-all.version>1.9.5</mockito-all.version>
+		<maven.compiler.plugin.version>3.7.0</maven.compiler.plugin.version>
+	</properties>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>com.github.type-markup</groupId>
+			<artifactId>type-markup</artifactId>
+			<version>${com.github.type-markup}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>fdv-slf4j-logback</groupId>
+			<artifactId>fdv-slf4j-logback</artifactId>
+			<version>${fdv.slf4j.logback}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-all</artifactId>
+			<version>${mockito-all.version}</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+</project>
