@@ -3,3 +3,7 @@
 **/.settings/
 **/*.log
 **/*.class
+tools
+tools-lib
+**/custom-target/
+**/*.jar
