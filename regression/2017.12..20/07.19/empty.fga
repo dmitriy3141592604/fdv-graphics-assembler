@@ -1,0 +1,20 @@
+#!/usr/bin/fdv-graphics-assembler
+
+# Программа создания пустого png файла
+#
+# @Author fdv 2017.12.20 07:24
+
+def dimension $didth $height
+	set width $width
+	set height $height
+
+def createEmptyImage $name
+	new ImageBuilder
+	set format png
+	dimension 400 300
+	call build
+	new ImageSaver
+	set baseName $name
+	call save
+
+createEmptyImage
